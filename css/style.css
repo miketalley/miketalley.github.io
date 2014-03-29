@@ -19,17 +19,35 @@ h1 {
 h2 {
 	position: relative;
 }
-ul {
-	padding: 23px;
-    background: #3399FF;
-    opacity: .8;
-    border: 2px solid black;
-    border-radius: 0 0 20px 20px;
-}
-img {
-	margin: 20px 0 60px 0;
+img.toppic {
+	margin: 20px 0 100px 0;
 	border-radius: 150px;
-	border: 0px solid #3399FF;
+	border: 3px solid black;
+	height: 200px;
+	width: 200px;
+}
+img.buttonsmall {
+	border: 0;
+	height: 35px;
+	width: 35px;
+}
+img.carousel {
+	height: 500px;
+	width: 700px;
+}
+.topright {
+	height: 200px;
+	width: 125px;
+	position: relative;
+	top: -4575px;
+	left: 1300px;
+}
+.bottomleft {
+	height: 200px;
+	width: 125px;
+	position: relative;
+	top: 50px;
+	left: -150px;
 }
 div {
 
@@ -42,7 +60,6 @@ p {
   background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.3));
   padding: 15px;
   line-height: 20px;
-
   position: absolute;
   bottom: 0;
   margin: 0;
@@ -64,18 +81,32 @@ span {
 }
 article {
 	position: relative;
-	top: -200px;
+	top: -100px;
 	left: 130px;
 	width: 80%;
 }
+.headerbottom {
+	padding: 10px;
+    background: #3399FF;
+    opacity: .8;
+    border: 0px solid black;
+    border-radius: 0 0 20px 20px;
+}
+.headertop {
+	padding: 10px;
+    background: #3399FF;
+    opacity: .8;
+    border: 0px solid black;
+    border-radius: 20px 20px 0 0;
+}
 .hobbies {
 	position: relative;
-	top: -180px;
+	top: -80px;
 }
 .contact {
 	color: white;
 	position: relative;
-	top: -165px;
+	top: -140px;
 	font-family: 'Ceviche One', cursive;
 	font-size: 25px;
 	color: white;
@@ -83,7 +114,7 @@ article {
 }
 .buttons {
 	position: relative;
-	top: -165px;
+	top: -115px;
 	text-align: center;
 }
 .guitar {
@@ -150,4 +181,43 @@ article {
 	position: relative;
 	font-family: courier;
 	font-size: 16px;
+}
+.hideable {
+    display: none;
+}
+.carousel {
+	position: relative;
+	left: 175px;
+	top: -50px;
+}
+form {
+	position: relative;
+	left: 400px;
+	top: -100px;
+}
+input {
+	color: rgba(255,255,255,1);
+ 	background: black;
+ 	background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.3));
+ 	background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.3));
+ 	background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.3));
+ 	padding: 15px;
+ 	line-height: 20px;
+	position: absolute;
+ 	bottom: 0;
+ 	margin: 0;
+ 	height: 500px;
+ 	transition: height .5s;
+ 	-webkit-transition: height .5s;
+ 	-moz-transition: height .5s;
+}
+.backbutton {
+	position: relative;
+	top: -481px;
+	left: -275px;
+}
+.forwardbutton {
+	position: relative;
+	top: -481px;
+	left: 415px;
 }

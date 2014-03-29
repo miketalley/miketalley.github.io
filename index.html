@@ -1,18 +1,49 @@
 <!DOCTYPE html>
+<html>
 <head>
-	<script src="/assets/jquery.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<title>Mike's About Me Page</title>
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Ceviche+One' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Sonsie+One' rel='stylesheet' type='text/css'>
-
+	<script>
+	function toggleSlide(direction) {
+    var elements = document.getElementsByClassName("hideable"); // gets all the "slides" in our slideshow
+    // Find the LI that's currently displayed
+    var visibleID = getVisible(elements);
+    elements[visibleID].style.display = "none"; // hide the currently visible LI
+    if(!direction) {
+        var makeVisible = prev(visibleID, elements.length); // get the previous slide
+    } else {
+        var makeVisible = next(visibleID, elements.length); // get the next slide
+    }
+    elements[makeVisible].style.display = "block"; // show the previous or next slide
+}
+function getVisible(elements) {
+    var visibleID = -1;
+    for(var i = 0; i < elements.length; i++) {
+        if(elements[i].style.display == "block") {
+            visibleID = i;
+        }
+    }
+    return visibleID;
+}
+function prev(num, arrayLength) {
+    if(num == 0) return arrayLength-1;
+    else return num-1;
+}
+function next(num, arrayLength) {
+    if(num == arrayLength-1) return 0;
+    else return num+1;
+}</script>
 </head>
 
 <body>
 <header>
-	<img src="images/mike.jpeg" height="200" width="200">
-	<ul></ul>
+	<div class="headertop"><ul></ul></div>
+	<img class="toppic" src="images/mike.jpeg">
+	<div class="headerbottom"><ul></ul></div>
 </header>
 <div class="contact">
 Mike Talley<br>
@@ -20,9 +51,9 @@ miketalley@hotmail.com<br>
 978-987-3196<br>
 </div>
 <div class="buttons">
-<a href="https://twitter.com/michaeldtalley"><img src="images/twittericon.png" height="35" width="35"></a>
-<a href="https://plus.google.com/u/0/111428811817552110289/posts/p/pub"><img src="images/googleplusicon.png" height="35" width="35"></a>
-<a href="https://www.linkedin.com/in/michaeldtalley"><img src="images/linkedinicon.png" height="35" width="35"></a>
+<a href="https://twitter.com/michaeldtalley"><img class="buttonsmall" src="images/twittericon.png"></a>
+<a href="https://plus.google.com/u/0/111428811817552110289/posts/p/pub"><img class="buttonsmall" src="images/googleplusicon.png"></a>
+<a href="https://www.linkedin.com/in/michaeldtalley"><img class="buttonsmall" src="images/linkedinicon.png"></a>
 </div>
 
 <article><span>Welcome!</span><br>You may not know me now, but by the time you finish reading this page, I hope that you will have a greater understanding of who Mike is! If you don't, please make sure to send me your questions!<br><br>
@@ -60,6 +91,21 @@ These are words I am trying hard to live by and looking to accomplish with the h
   <small>Since I got the Nintendo Entertainment Center at age 6, I've been an avid gamer. Although I still have the NES hooked up at home, I have been playing mostly Xbox One games most recently <a href="http://www.titanfall.com/">Titanfall</a>.</small></p>
 </div>
 </div>
+<br><br><br>
+<article><span>Mike's Photo Gallery</span></article>
+<div class="carousel">
+<ul style="list-style-type:none; margin-left:-2em;">
+    <li id="1" class="hideable" style="display: block;"><img class="carousel" src="images/aruba.jpg"></li>
+    <li id="2" class="hideable"><img class="carousel" src="images/snowy.jpg"></li>
+    <li id="3" class="hideable"><img class="carousel" src="images/edelman.jpg"></li>
+</ul>
+<form>
+<input class="backbutton" type="button" value="<" onclick="toggleSlide(false)" />
+<input class="forwardbutton" type="button" value=">" onclick="toggleSlide(true)" />
+</form>
+</div>
 
+<img class="topright" src="images/rails.jpg"><img class="bottomleft" src="images/flume.jpg">
 
 </body>
+</html>
