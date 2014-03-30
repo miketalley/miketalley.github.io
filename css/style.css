@@ -191,7 +191,7 @@ a {
 	font-weight: bolder;
 	text-decoration: none;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
 	.topright {
 		visibility: hidden;
 	}
