@@ -23,6 +23,7 @@ img.carousel {
 	width: 125px;
 	color: black;
 	text-align: center;
+	font-family: 'Sonsie One', cursive;
 }
 .trcorner {
 	height: 225px;
@@ -38,6 +39,7 @@ img.carousel {
 	border-radius: 0 20px 0 0;
 	color: black;
 	text-align: center;
+	font-family: 'Sonsie One', cursive;
 }
 .blcorner {
 	height: 225px;
@@ -191,7 +193,7 @@ a {
 	font-weight: bolder;
 	text-decoration: none;
 }
-@media (max-width: 1000px) {
+@media (max-width: 480px) {
 	.topright {
 		visibility: hidden;
 	}
