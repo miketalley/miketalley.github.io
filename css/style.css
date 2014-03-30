@@ -191,6 +191,11 @@ a {
 	font-weight: bolder;
 	text-decoration: none;
 }
+@media (max-width: 500px) {
+.hobbies {
+	width: 500px;
+}
+}
 
 /*header {
 	background-image: url("../images/sunset.jpg");
