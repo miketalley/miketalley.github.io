@@ -77,9 +77,9 @@ article {
 .guitar {
 	background-image: url("../images/stratocaster.jpg");
 	height: 350px;
-	width: 1050px;	
+	width: 95%;	
 	border-radius: 10px solid black;
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	margin: 0 auto;
 	color: black;
@@ -90,7 +90,7 @@ article {
 .hockey {
 	background-image: url("../images/bruinslogo.jpg");
 	height: 350px;
-	width: 1050px;
+	width: 95%;
 	border-radius: 10px solid black;
 	background-size: cover;
 	background-position: center;
@@ -103,7 +103,7 @@ article {
 .snowboarding {
 	background-image: url("../images/snowboarding.jpg");
 	height: 350px;
-	width: 1050px;
+	width: 95%;
 	border-radius: 10px solid black;
 	background-size: cover;
 	background-position: center -50px;
@@ -116,10 +116,10 @@ article {
 .hiking {
 	background-image: url("../images/lafayette.jpg");
 	height: 350px;
-	width: 1050px;
+	width: 95%;
 	border-radius: 10px solid black;
 	background-size: cover;
-	background-position: center 50px;
+	background-position: center 20px;
 	margin: 0 auto;
 	color: black;
 	position: relative;
@@ -129,7 +129,7 @@ article {
 .videogames {
 	background-image: url("../images/titanfall.jpg");
 	height: 350px;
-	width: 1050px;
+	width: 95%;
 	border-radius: 10px solid black;
 	background-size: cover;
 	background-position: center top;
