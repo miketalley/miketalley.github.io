@@ -192,9 +192,18 @@ a {
 	text-decoration: none;
 }
 @media (max-width: 500px) {
-.hobbies {
-	width: 500px;
-}
+	.topright {
+		visibility: hidden;
+	}
+	.bottomleft {
+		visibility: hidden;
+	}
+	header {
+		width: 100%;
+	}
+	.content {
+		width: 100%;
+	}
 }
 
 /*header {
