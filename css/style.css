@@ -74,70 +74,40 @@ span {
 article {
 	padding: 30px;
 }
-.guitar {
-	background-image: url("../images/stratocaster.jpg");
+.hobbybox {
 	height: 350px;
 	width: 95%;	
 	border-radius: 10px solid black;
+	margin: 0 auto;
+	color: black;
+	position: relative;
+	font-family: courier;
+	font-size: 16px;
+}
+#guitar {
+	background-image: url("../images/stratocaster.jpg");
 	background-size: contain;
 	background-position: center;
-	margin: 0 auto;
-	color: black;
-	position: relative;
-	font-family: courier;
-	font-size: 16px;
 }
-.hockey {
+#hockey {
 	background-image: url("../images/bruinslogo.jpg");
-	height: 350px;
-	width: 95%;
-	border-radius: 10px solid black;
 	background-size: cover;
 	background-position: center;
-	margin: 0 auto;
-	color: black;
-	position: relative;
-	font-family: courier;
-	font-size: 16px;
 }
-.snowboarding {
+#snowboarding {
 	background-image: url("../images/snowboarding.jpg");
-	height: 350px;
-	width: 95%;
-	border-radius: 10px solid black;
 	background-size: cover;
 	background-position: center -50px;
-	margin: 0 auto;
-	color: black;
-	position: relative;
-	font-family: courier;
-	font-size: 16px;
 }
-.hiking {
+#hiking {
 	background-image: url("../images/lafayette.jpg");
-	height: 350px;
-	width: 95%;
-	border-radius: 10px solid black;
 	background-size: cover;
 	background-position: center 20px;
-	margin: 0 auto;
-	color: black;
-	position: relative;
-	font-family: courier;
-	font-size: 16px;
 }
-.videogames {
+#videogames {
 	background-image: url("../images/titanfall.jpg");
-	height: 350px;
-	width: 95%;
-	border-radius: 10px solid black;
 	background-size: cover;
 	background-position: center top;
-	margin: 0 auto;
-	color: black;
-	position: relative;
-	font-family: courier;
-	font-size: 16px;
 }
 .hideable {
     display: none;
